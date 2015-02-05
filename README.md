@@ -6,7 +6,7 @@ These tools have been developed using Matlab 2014b and tested using Matlab 2012b
 
 An example for how to use the tools is given in example.m. 
 
-Before running the example, make sure that the path to Kaldis' binaries is in your bash profile. Alternatively, do the following steps:
+Before running the example, make sure to extract the archive final.7z and that the path to Kaldis' binaries is in your bash profile. Alternatively, do the following steps:
 
 - Write the path to kaldi trunk in the script path.sh
 - Run the script path.sh as follows:
