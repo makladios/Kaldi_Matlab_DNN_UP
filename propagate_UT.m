@@ -1,12 +1,16 @@
 function [Mu_out,Cov_out]=propagate_UT(Mu_in,Cov_in)
 % [Mu_out,Cov_out]= propagate_UT(Mu_in,Cov_in) probagates the mean vector 
 % Mu_in and the diagonal covariance matrix with diagonal vector  Cov_in 
-% through sigmoid function using the unscented transformation. Mu_out is 
+% through sigmoid function using the unscented transformation [1]. Mu_out is 
 % the propagated mean and Cov_out is the diagonal vector of the propagated
 % diagonal covariance matrix.
 % Input arguments:
 % Mu_in --> Mean value of the input distribution
 % Cov_in --> Variance of the input distribution
+%
+% [1] Ramon Fernandez Astudillo, João Paulo da Silva Neto, “Propagation 
+% of Uncertainty through Multilayer Perceptrons for Robust Automatic Speech
+% Recognition, ” in Interspeech, 2011
 %
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%                              
 % Written by Ahmed Hussen Abdelaziz and Shinji Watanabe  

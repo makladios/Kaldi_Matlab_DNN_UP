@@ -1,12 +1,16 @@
 function [E_h,S2_h]= propagate_PIE(Mu,S2)
 % [E_h,S2_h]= propagate_PIE(Mu,S2) probagates the mean vector Mu and the 
 % diagonal covariance matrix with diagonal vector S2 through sigmoid 
-% function using the PIE approximation. E_h is the propagated
+% function using the PIE approximation [1]. E_h is the propagated
 % mean and and S2_h is the diagonal vector of the propagated diagonal 
 % covariance matrix.
 % Input arguments:
 % Mu --> Mean value of the input distribution
 % S2 --> Variance of the input distribution
+%
+% [1] Ramon Fernandez Astudillo, João Paulo da Silva Neto, “Propagation 
+% of Uncertainty through Multilayer Perceptrons for Robust Automatic Speech
+% Recognition, ” in Interspeech, 2011
 %
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%                              
 % Written by Ahmed Hussen Abdelaziz and Shinji Watanabe  

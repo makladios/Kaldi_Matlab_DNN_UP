@@ -1,12 +1,16 @@
 function [propMean, propVar]=nnet_PIE_propagate(nnet,feats,uncert)
 % [propMean, propVar]=nnet_PIE_propagate(nnet,feats,uncert) propagates  
 % uncertain features through nural network till the pre-activation of the 
-% soft-max layer using the PIE approximation and returns the propagated 
-% mean propMean and the propagated covariance propVar.
+% soft-max layer using the PIE approximation [1] and returns the propagated 
+% mean propMean and the propagated covariance propVar.  
 % Input arguments:
 % nnet --> Cell array containing neural network parameters. 
 % features --> Feature matrix
 % uncert --> Uncertainty matrix
+%
+% [1] Ramon Fernandez Astudillo, João Paulo da Silva Neto, “Propagation 
+% of Uncertainty through Multilayer Perceptrons for Robust Automatic Speech
+% Recognition, ” in Interspeech, 2011
 %
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%                              
 % Written by Ahmed Hussen Abdelaziz and Shinji Watanabe  
