@@ -20,7 +20,7 @@ config=readkaldiFTFile(FTFilePath);
 
 % Path to prior Info 
 priorPath= [pwd '/ali_train_pdf.counts'];
-prior=readkaldiPriors(priorPath);
+logPrior=readkaldiPriors(priorPath);
 
 % Path to an ARK feature file
 featName='exp1';
@@ -41,7 +41,7 @@ feats=nnet_applyContext(featsSingle,config);
 % [propMean, propVar]=nnet_UT_propagate(nnet,feats,uncert);
 
 % Compute psudo log likelihoods
-PseudoLL=logPosteriors-repmat(log(prior),[1,T]);
+PseudoLL=logPosteriors-repmat(logPrior,[1,T]);
 
 % Write Pseudo LLs to an ark file 
 PLL.utt={featName};
