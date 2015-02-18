@@ -1,4 +1,4 @@
-# Kaldi_Matlab_UD_UP
+# Kaldi_Matlab_DNN_UP
 
 Description
 ------------
@@ -15,6 +15,10 @@ License
 Permission is granted for anyone to copy, use, or modify these tools for purposes of research or education. 
 
 These tools have been developed using Matlab 2014b and tested using Matlab 2012b and 2014b in conjunction with Kaldi Version 4069. However, the tools are distributed without any warranty.  As the programs were written for research purposes only, they have not been tested to the degree that would be advisable in any important application.  All use of these programs is entirely at the user's own risk.
+
+If you use this software in a publication, please cite
+
+Ahmed Hussen Abdelaziz and Shinji Watanabe, Kaldi/Matlab DNN-based uncertainty propagation tools, https://github.com/makladios/Kaldi_Matlab_DNN_UP, 2015.
 
 Usage
 ------
